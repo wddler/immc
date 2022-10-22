@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="bartable">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>model://bartable/meshes/bartable.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 0.9</scale>
+            <uri>model://bartable/meshes/bartable.dae</uri>
+          </mesh>
+        </geometry>
+       <material>
+         <script>
+           <uri>model://flipchart/materials/scripts</uri>
+           <uri>model://flipchart/materials/textures</uri>
+           <name>FlipChart/Diffuse</name>
+         </script>
+       </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

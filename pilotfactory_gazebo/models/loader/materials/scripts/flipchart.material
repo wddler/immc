@@ -1,0 +1,14 @@
+material red/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture red.png
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Zatyagov"
+  given-names: "Denis"
+- family-names: "Killingseder"
+  given-names: "Patrick"
+- family-names: "Ozan"
+  given-names: "Kugu"
+- family-names: "Reiterer"
+  given-names: "Bernhard"
+- family-names: "Rahmani Choubeh"
+  given-names: "Nima"
+- family-names: "Wallner"
+  given-names: "Bernhard"
+  
+title: "Industrial Mobile Manipulation Challenge 2022"
+date-released: 2022-10-24
+url: "https://github.com/wddler/immc"

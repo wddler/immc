@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="assemblybench">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>0.5 0.8 1</scale>
+            <uri>model://assemblybench/meshes/assemblybench2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.5 0.8 1</scale>
+            <uri>model://assemblybench/meshes/assemblybench2.dae</uri>
+          </mesh>
+        </geometry>
+       <material>
+         <script>
+           <uri>model://assemblybench/materials/scripts</uri>
+           <uri>model://assemblybench/materials/textures</uri>
+           <name>AssemblyBench/Diffuse</name>
+         </script>
+       </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

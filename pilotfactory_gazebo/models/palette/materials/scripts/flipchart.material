@@ -1,0 +1,14 @@
+material palette/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture wood.jpg
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="weirdtable">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>0.06 0.06 0.06</scale>
+            <uri>model://weirdtable/meshes/weirdtable.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.06 0.06 0.06</scale>
+            <uri>model://weirdtable/meshes/weirdtable.dae</uri>
+          </mesh>
+        </geometry>
+       <material>
+         <script>
+           <uri>model://flipchart/materials/scripts</uri>
+           <uri>model://flipchart/materials/textures</uri>
+           <name>FlipChart/Diffuse</name>
+         </script>
+       </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

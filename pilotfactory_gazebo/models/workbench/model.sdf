@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="workbench">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>0.8 1 1</scale>
+            <uri>model://workbench/meshes/workbench.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.8 1 1</scale>
+            <uri>model://workbench/meshes/workbench.dae</uri>
+          </mesh>
+        </geometry>
+       <material>
+         <script>
+           <uri>model://workbench/materials/scripts</uri>
+           <uri>model://workbench/materials/textures</uri>
+           <name>WorkBench/Diffuse</name>
+         </script>
+       </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<launch>
+  <!-- Add Gazebo model path-->
+  
+  <env name="GAZEBO_MODEL_PATH" value="$(find pilotfactory_gazebo)/models:$GAZEBO_MODEL_PATH" />
+  
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find pilotfactory_gazebo)/worlds/pilotfactory.world"/>
+    <!-- more default parameters can be changed here -->
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="recording" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+  
+    <!-- launch Mobile Manipulator -->
+  <include file="$(find turtlebot3_manipulation_gazebo)/launch/turtlebot3_manipulation_for_factory.launch">
+  </include>
+
+</launch>

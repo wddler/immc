@@ -1,0 +1,24 @@
+<launch>
+  
+  <arg name="map_file" default="$(find pilotfactory_gazebo)/maps/map.yaml"/>
+
+  <!--Factory World -->
+  <include file="$(find pilotfactory_gazebo)/launch/pilotfactory.launch">
+  </include>
+
+  <!--Turtlebot_manipulator move_group -->
+  <include file="$(find turtlebot3_manipulation_moveit_config)/launch/move_group.launch">
+  </include>
+
+  <!--Turtlebot_manipulator navigation -->
+  <include file="$(find turtlebot3_manipulation_navigation)/launch/navigation.launch">
+  <arg name="map_file" value="$(arg map_file)" />
+  </include>
+
+  <!--Order Manager -->
+  <node pkg="immc_orders" name="order_manager_node" type="order_manager.py" output="screen"/>
+
+  <!--Spawn objects for manipulation-->
+  <node pkg="immc_orders" name="spawn_objects" type="spawn_training_set.py"/>
+
+</launch>

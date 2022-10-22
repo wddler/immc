@@ -1,0 +1,14 @@
+material FlipChart/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture flipchart.png
+      }
+    }
+  }
+}

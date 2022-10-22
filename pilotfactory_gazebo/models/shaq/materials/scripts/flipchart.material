@@ -1,0 +1,14 @@
+material shaq/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture shaq.jpg
+      }
+    }
+  }
+}

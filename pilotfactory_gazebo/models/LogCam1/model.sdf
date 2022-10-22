@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='LogCam1'>
+    <link name='link'>
+      <sensor name='logical_camera' type='logical_camera'>
+        <logical_camera>
+          <near>0.55</near>
+          <far>2.5</far>
+          <horizontal_fov>1.05</horizontal_fov>
+          <aspect_ratio>1.8</aspect_ratio>
+        </logical_camera>
+        <visualize>1</visualize>
+        <always_on>1</always_on>
+        <update_rate>10</update_rate>
+      </sensor>
+      <self_collide>0</self_collide>
+      <enable_wind>0</enable_wind>
+      <kinematic>0</kinematic>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+    </link>
+    <static>1</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>

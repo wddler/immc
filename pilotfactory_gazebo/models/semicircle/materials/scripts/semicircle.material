@@ -1,0 +1,14 @@
+material SemiCircle/Diffuse
+{
+  receive_shadows off
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture green.png
+      }
+    }
+  }
+}

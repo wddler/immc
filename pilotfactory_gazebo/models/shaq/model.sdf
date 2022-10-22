@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="shaq">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://shaq/meshes/shaq.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://shaq/meshes/shaq.dae</uri>
+          </mesh>
+        </geometry>
+       <material>
+         <script>
+           <uri>model://shaq/materials/scripts</uri>
+           <uri>model://shaq/materials/textures</uri>
+           <name>shaq/Diffuse</name>
+         </script>
+       </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

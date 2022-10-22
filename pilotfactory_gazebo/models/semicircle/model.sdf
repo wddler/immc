@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="semicircle">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>0.2 0.3 0.02</scale>
+            <uri>model://semicircle/meshes/semicircle.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.02 0.03 0.02</scale>
+            <uri>model://semicircle/meshes/semicircle.dae</uri>
+          </mesh>
+        </geometry>
+       <material>
+         <script>
+           <uri>model://semicircle/materials/scripts</uri>
+           <uri>model://semicircle/materials/textures</uri>
+           <name>SemiCircle/Diffuse</name>
+         </script>
+       </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

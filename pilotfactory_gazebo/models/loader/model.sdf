@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="loader">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <scale>0.35 0.35 0.35</scale>
+            <uri>model://loader/meshes/loader.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>0.35 0.35 0.35</scale>
+            <uri>model://loader/meshes/loader.dae</uri>
+          </mesh>
+        </geometry>
+       <material>
+         <script>
+           <uri>model://loader/materials/scripts</uri>
+           <uri>model://loader/materials/textures</uri>
+           <name>red/Diffuse</name>
+         </script>
+       </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

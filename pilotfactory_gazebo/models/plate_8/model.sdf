@@ -1,0 +1,41 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='plate_9'>
+    <link name='link_2'>
+      <gravity>1</gravity>
+      <visual name='visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.9 1.4 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <lighting>1</lighting>
+          <script>
+            <uri>model://plate_9/materials/scripts</uri>
+            <uri>model://plate_9/materials/textures</uri>
+            <name>plateby</name>
+          </script>
+        </material>
+        <transparency>0</transparency>
+        <cast_shadows>1</cast_shadows>
+      </visual>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>0.0 0.0 0.0</size>
+          </box>
+        </geometry>
+        <surface>
+          <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+           </friction>
+        </surface>
+      </collision>
+    </link>
+  </model>
+</sdf>
