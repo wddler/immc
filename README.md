@@ -16,7 +16,7 @@ For the details about Virtual Micro Challenge 2022 please refer to the [Rulebook
 
 ### [immc_bringup](immc_bringup)
 
-Contains the _launch/immc_bringup_factory.launch_ which is the starting point of the task within the Virtual Micro Challenge.
+Contains the `launch/immc_bringup_factory.launch` which is the starting point of the task within the Virtual Micro Challenge.
 
 ### [immc_demo](immc_demo)
 
@@ -45,7 +45,7 @@ Turtlebot3 mobile platform with OpenManipulator robot arm [by ROBOTIS](https://e
 ## Installation
 
 1. Make sure your environment has ROS Noetic and Gazebo 11 installed. [Installation guide](http://wiki.ros.org/noetic/Installation)
-2. Navigate to you workspace
+2. Navigate to you workspace/src
 3. `$ git clone https://github.com/wddler/immc.git`
 4. `$ cd immc`
 5. `$ catkin_make`
