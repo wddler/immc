@@ -10,6 +10,8 @@ This repository contains software packages for Virtual Micro Challenge 2022 and 
 
 For the details about Virtual Micro Challenge 2022 please refer to the [Rulebook](immc_virtual_micro_rulebook_2022.pdf)
 
+## [Results of the Virtual Micro Challenge 2022](Virtual_Micro_Challenge_2022_Results)
+
 ## Repository Overview
 
 ### [immc_bringup](immc_bringup)
